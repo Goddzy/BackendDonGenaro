@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({extends:true}));
 app.use(morgan('dev')) //otorga más información sobre las peticiones en la consola 
 //cargar un archivo estático
-app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 //agrego las rutas
 app.use('/pizzeria', productoRouter)
